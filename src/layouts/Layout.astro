@@ -1,0 +1,49 @@
+---
+import { Analytics } from '@vercel/analytics/react';
+import Header from "../components/Header.astro";
+// @ts-ignore: Allow side-effect import of global CSS without type declarations
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="../MakeWeb_MM.svg" />
+		<link href="https://fonts.cdnfonts.com/css/tempting" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<title>Mis 18 Tete</title>
+	</head>
+	
+	<body class="bg-fixed bg-[url('../background.webp')] bg-center bg-no-repeat text-[#1E2D42]">
+		<Header />
+		<slot />
+		<Analytics />
+	</body>
+
+</html>
+
+
+<style is:global>
+    html {
+		font-family: 'Times New Roman', Times, serif;
+  		font-optical-sizing: auto;
+			font-weight: 400;
+	}
+</style>
+
+<script type="text/javascript">
+    const audio = document.getElementById("myAudio");
+    const playPauseBtn = document.getElementById("playPauseBtn");
+
+    playPauseBtn.addEventListener("click", function() {
+        if (audio.paused) {
+            audio.play();
+            playPauseBtn.textContent = "🔊";
+        } else {
+            audio.pause();
+            playPauseBtn.textContent = "🔇";
+        }
+    });
+</script>

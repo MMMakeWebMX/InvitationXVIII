@@ -1,0 +1,62 @@
+<div class=" flex flex-col">
+    <div class="animate-fade-in flex flex-col justify-center items-center gap-10  md:p-8 ">
+        <div class="relative w-full h-auto items-center text-center text-2xl md:text-8xl">
+            <h1 class=" font-bold">¡Mis 18 años!</h1>
+        </div>
+        <div class="bg-[url('../fondo.webp')] bg-center bg-no-repeat bg-contain">
+        </div>
+        <img src="../mayte.webp" alt="Mayte" class="animate-fade-in h-1/2 md:h-2/3 xl:h-80 w-auto drop-shadow-2xl" />
+    </div>
+    <img src="../hero.webp" alt="Fix" class="absolute inset-0 object-cover" />
+    
+    <div class="animate-scale-in relative items-center justify-center p-6 md:p-8 ">
+        <div class="inline-flex items-center gap-3 p-4">
+            <span class="border-y-2 border-[#1E2D42] px-1 text-xl tracking-wider font-semibold">
+                OCTUBRE
+            </span>
+
+            <!-- Número central destacado -->
+            <span class="text-6xl text-[#3B0A0A] font-light leading-none">
+                31
+            </span>
+
+            <!-- Texto derecho con bordes arriba y abajo -->
+            <span class="border-y-2 border-[#1E2D42] px-1 text-xl tracking-wider font-semibold">
+                7:00 P.M.
+            </span>
+        </div>
+    </div>    
+
+</div>
+
+<style>
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .animate-fade-in {
+        animation: fade-in 1s ease-out;
+    }
+
+    @keyframes scale-in {
+                from {
+                    transform: scale(0);
+                    opacity: 0;
+                }
+                to {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+            .animate-scale-in {
+                animation: scale-in 0.8s ease-out;
+            }
+</style>
+
+

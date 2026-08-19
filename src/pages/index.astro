@@ -3,7 +3,6 @@ import Loading from '../components/Loading.jsx';
 import Hero from '../components/Hero.astro';
 import Layout from '../layouts/Layout.astro';
 import Ubication from '../components/Ubication.astro';
-import Footer from '../components/Footer.astro';
 import Makeweb from '../components/Makeweb.astro';
 import Timer from '../components/Timer.jsx';
 // Importante: el componente Loading debe ser cargado en el cliente
@@ -16,11 +15,11 @@ import Timer from '../components/Timer.jsx';
 			<Hero />
 		</section>
 		
-		<section class="overflow-hidden flex flex-col items-center justify-center ">
+		<section class="overflow-hidden flex flex-col items-center justify-center w-screen">
 			<Ubication />
 		</section>
 
-		<section class="flex flex-col items-center justify-center">
+		<section class="flex flex-col items-center justify-center md:h-auto w-screen">
 			<Timer client:visible/>
 		</section>
 

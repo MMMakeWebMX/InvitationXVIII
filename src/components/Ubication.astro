@@ -2,26 +2,29 @@
 import AnimacionScroll from '../components/AnimacionScroll.jsx';
 ---
 
-<AnimacionScroll client:visible direction="left">
-    <div class="relative text-center items-center justify-center p-6 md:p-8 ">
-    
-        <a href="https://maps.app.goo.gl/eEsFrUYPzrnwxc1a6" target="_blank" class="no-underline">
+
+<div class="relative text-center items-center justify-center p-6 md:p-8 ">
+
+    <a href="https://maps.app.goo.gl/eEsFrUYPzrnwxc1a6" target="_blank" class="no-underline">
+        <AnimacionScroll client:visible direction="left">
             <h1 class="text-5xl md:text-8xl font-black text-[#4d010f] leading-tight tracking-tight px-4">
-                ¡Te invito a celebrar mis 18 años!
+                Te invito a celebrar mis 18 años
             </h1>
+        </AnimacionScroll>
+        <AnimacionScroll client:visible direction="right">
             <div class="relative bg-[url('../fondo.webp')] bg-center bg-no-repeat bg-contain mt-10 w-full h-auto items-center "> 
                 <p class="text-center font-serif text-lg ">
-                    <strong>Salon "México lindo"</strong> <img src="https://img.icons8.com/?size=100&id=vsJyRh6Kp7fZ&format=png&color=000000" alt="Ubicación" class=" w-6 h-6 absolute -right-1 md:right-20 transform translate-x-2"/> <br>
+                    <strong>Salon "México lindo"</strong> <br>
                     C. Fausto Nieto 110, Soledad Centro <br>
                     (Soldead de graciano Sánchez, S.L.P.)
                 </p>
-            
             </div>
-        </a>
+        </AnimacionScroll>
+    </a>
 
-        
-    </div>
-</AnimacionScroll>
+    
+</div>
+
 
 
 

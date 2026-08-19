@@ -62,7 +62,7 @@ export default function CountdownTimer() {
                 </AnimacionScroll>
                 
             </div>
-            <img src="../footer.webp" alt="Footer decorative" class="w-full -mt-44 object-contain" />
+            <img src="../footer.webp" alt="Footer decorative" className="w-full -mt-44 md:-mt-80 object-contain" />
         </section>
     );
 }

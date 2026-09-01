@@ -35,8 +35,8 @@ export default function LoadingInvite({ children }) {
                 
                     
                 <div className="flex flex-col items-center justify-center text-center animate-ping [animation-duration:3s] w-screen h-32">
-                    <img src="../mis18.webp" alt="Mis!8" className="object-cover h-32" />
-                    <img src="../year.webp" alt="Mis!8" className="object-cover h-32" />
+                    <img src="src/images/mis18.webp" alt="Mis!8" className="object-cover h-32" />
+                    <img src="src/images/year.webp" alt="Mis!8" className="object-cover h-32" />
                 </div>
                 
 
